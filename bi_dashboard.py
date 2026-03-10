@@ -150,6 +150,10 @@ def revenue_by_region():
             y='total_venda'
         )
 
+        plt.title("Receita por região")
+        plt.xlabel("Região")
+        plt.ylabel("Receita R$")
+
         plt.savefig('teste_regiao.png')
 
     
@@ -158,8 +162,7 @@ def revenue_by_region():
     print(df.head())
 
 if __name__ == "__main__":
-    #executive_vision_generator()
-    #price_revenue_correlation()
-    #seasonality()
+    price_revenue_correlation()
+    seasonality()
     revenue_by_region()
     pass
